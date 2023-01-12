@@ -23,9 +23,23 @@ cat_xoddog.row("🌭 Хот-Дог", "Хот-Дог Двойной")
 cat_xoddog.add(back_button)
 
 
-cat_chicken_wings = ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
+
+numbers = ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
 
 for num in range(1, 10):
-    cat_chicken_wings.insert(KeyboardButton(text=str(num)))
-cat_chicken_wings.add(back_button)
+    numbers.insert(KeyboardButton(text=str(num)))
+numbers.add(back_button)
+
+
+cat_drinks = ReplyKeyboardMarkup(resize_keyboard=True)
+cat_drinks.row("Кола", "Фанта")
+cat_drinks.row("Спрайт")
+cat_drinks.add(back_button)
+
+    
+
+cat_extras = ReplyKeyboardMarkup(resize_keyboard=True)
+cat_extras.row("Картошка Фри")
+cat_extras.row("Фирминни Соус", "Кетчуп")
+cat_extras.add(back_button)
 
